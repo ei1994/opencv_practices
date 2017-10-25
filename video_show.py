@@ -40,4 +40,3 @@ def camera_(file, SaveVideo):
 if __name__ == '__main__':
     camera_('111.mp4',True)
 
-    
