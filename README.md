@@ -1,1 +1,1 @@
-# opencv_practice
+# opencv_practices
