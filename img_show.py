@@ -23,3 +23,4 @@ cv2.waitKey(1)
 #plt.imshow(img,cmap='gray')
 #plt.xticks([]), plt.yticks([])
 ##plt.show()
+
