@@ -2,7 +2,12 @@ import cv2
 import numpy as np
 import matplotlib.pylab as plt
 import scipy.misc as misc
-
+'''
+简单来说就是对一幅双峰图像自动根据其直方图计算出一个阈值。(对于非双峰图像,这种方法得到的结果可能会不理想)。
+这里用到到的函数还是 cv2.threshold(),但是需要多传入一个参数(flag):cv2.THRESH_OTSU。这时要把阈值设为 0。
+然后算法会找到最优阈值,这个最优阈值就是返回值 retVal。
+如果不使用 Otsu 二值化,返回的retVal 值与设定的阈值相等。
+'''
 
 img = cv2.imread('images/32.jpg',0)
 # global thresholding
